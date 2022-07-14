@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whac-A-Mole</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      #scorePlate {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 150px 0 150px;
+      }
+      #board {
+        margin: 0;
+        padding: 0;
+      }
+      #rowOne,
+      #rowTwo,
+      #rowThree {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+      }
+      .cardDiv {
+        margin: 0;
+        padding: 0;
+        height: 120px;
+        width: 120px;
+        border: solid 1px black;
+      }
+      img {
+        width: 120px;
+        height: 120px;
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        display: block;
+        font-size: 25px;
+        padding: 10px 20px;
+        transition: 150ms ease-in-out;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px 2px grey;
+        color: #e3e3e3;
+        background: #64a0e9;
+        border: 2px solid #64a0e9;
+        margin: 25px auto 0 auto;
+      }
+      button:hover {
+        border: 2px solid #64a0e9;
+        color: #64a0e9;
+        cursor: pointer;
+        background: #e3e3e3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Whac-A-Mole</h1>
+    <div id="scorePlate">
+      <h3>Score: <span id="score">0</span></h3>
+      <h3>Timer: <span id="timer">60</span></h3>
+    </div>
+    <div id="board">
+      <div id="rowOne">
+        <div class="cardDiv"></div>
+        <div class="cardDiv"></div>
+
+        <div class="cardDiv"></div>
+
+        <div class="cardDiv"></div>
+      </div>
+      <div id="rowTwo">
+        <div class="cardDiv"></div>
+
+        <div class="cardDiv"></div>
+
+        <div class="cardDiv"></div>
+
+        <div class="cardDiv"></div>
+      </div>
+      <div id="rowThree">
+        <div class="cardDiv"></div>
+
+        <div class="cardDiv"></div>
+
+        <div class="cardDiv"></div>
+        <div class="cardDiv"></div>
+      </div>
+    </div>
+    <button>Start</button>
+    <script src="WhacAMoleApp.js"></script>
+  </body>
+</html>
